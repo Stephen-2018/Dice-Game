@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 Debvelona Dice Game 🎲</h1>
+
+        <div class="game-settings">
+            <label for="players">Select Number of Players:</label>
+            <input type="number" id="players" min="3" max="6" value="3">
+            <button class="btn start-btn" onclick="startGame()">Start Game</button>
+        </div>
+
+        <div id="players-container"></div>
+        <button id="roll-btn" class="btn roll-btn" onclick="rollDice()" disabled>🎲 Roll Dice</button>
+        
+        <h2 id="winner"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
